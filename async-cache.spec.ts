@@ -85,6 +85,6 @@ describe('AsyncCache', () => {
     await delay(600);
     await cache.exec('hello').then(result => expect(result).to.deep.equal({ first: 'hello' }));
   
-    expect(this.spy.callCount).to.equal(0);
+    expect(this.spy.callCount).to.equal(2);
   });
 });
