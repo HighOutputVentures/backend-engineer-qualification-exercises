@@ -11,6 +11,7 @@
     "@types/ramda": "^0.27.3",
     "@types/sinon": "^9.0.0",
     "chai": "^4.2.0",
+    "luxon": "^1.24.1",
     "mocha": "^7.1.1",
     "ramda": "^0.27.0",
     "sinon": "^9.0.2",
@@ -29,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/HighOutputVentures/backend-developer-exercises/issues"
   },
-  "homepage": "https://github.com/HighOutputVentures/backend-developer-exercises#readme"
+  "homepage": "https://github.com/HighOutputVentures/backend-developer-exercises#readme",
+  "devDependencies": {
+    "@types/luxon": "^1.24.0"
+  }
 }
