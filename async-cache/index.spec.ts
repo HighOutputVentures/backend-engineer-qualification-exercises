@@ -2,7 +2,7 @@ import delay from '@highoutput/delay';
 import sinon from 'sinon';
 import { expect } from 'chai';
 import R from 'ramda';
-import AsyncCache from './async-cache';
+import AsyncCache from '.';
 
 describe('AsyncCache', () => {
   before(function () {
