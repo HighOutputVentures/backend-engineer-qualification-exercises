@@ -9,17 +9,17 @@ describe('availability', () => {
     },
     {
       input: [new Date('2020-03-05T00:00:00.000Z'), new Date('2020-03-06T00:00:00.000Z')],
-      output: 1,
+      output: 0.968055556,
     },
     {
       input: [new Date('2020-03-01T00:00:00.000Z'), new Date('2020-04-01T00:00:00.000Z')],
-      output: 1,
+      output: 0.996169355,
     }
   ];
 
   for (const { input, output } of cases) {
     it('should generate correct output', () => {
-      expect(availability.apply(null, input)).to.equal(output);
+      expect(availability.apply(null, input)).to.be.approximately(output, 0.001);
     });
   }
 });
@@ -65,7 +65,7 @@ describe('outages', () => {
         },
         {
           type: 'PARTIAL',
-          timestamp: new Date('2020-03-05T05:15:00.000Z'),
+          timestamp: new Date('2020-03-20T05:15:00.000Z'),
           duration: 30,
         },
         {
