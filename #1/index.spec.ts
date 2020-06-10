@@ -75,7 +75,7 @@ describe('AsyncCache', () => {
     await cache.exec({ message: 'hello' }, 10).then(result => expect(result).to.deep.equal({ first: { message: 'hello' }, second: 10 }));
     await cache.exec({ message: 'world' }, 5).then(result => expect(result).to.deep.equal({ first: { message: 'world' }, second: 5 }));
 
-    expect(this.spy.calledOnce).to.be.true;
+    expect(this.spy.callCount).to.equal(2);
   });
 
   it('should call the handler multiple times, when #exec is called multiple times in series with a delay in between calls', async function () {
