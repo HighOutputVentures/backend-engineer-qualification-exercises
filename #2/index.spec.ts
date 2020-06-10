@@ -8,7 +8,7 @@ describe('availability', () => {
       output: 1,
     },
     {
-      input: [new Date('2020-03-05T00:00:00.000Z'), new Date('2020-03-06T00:00:00.000Z')],
+      input: [new Date('2020-03-06T00:00:00.000Z'), new Date('2020-03-07T00:00:00.000Z')],
       output: 0.968055556,
     },
     {
