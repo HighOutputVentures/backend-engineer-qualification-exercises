@@ -31,16 +31,16 @@ describe('outages', () => {
       output: [],
     },
     {
-      input: [new Date('2020-03-05T00:00:00.000Z'), new Date('2020-03-06T00:00:00.000Z')],
+      input: [new Date('2020-03-06T00:00:00.000Z'), new Date('2020-03-07T00:00:00.000Z')],
       output: [
         {
           type: 'MAJOR',
-          timestamp: new Date('2020-03-05T06:24:00.000Z'),
+          timestamp: new Date('2020-03-06T06:24:00.000Z'),
           duration: 31,
         },
         {
           type: 'PARTIAL',
-          timestamp: new Date('2020-03-05T06:55:00.000Z'),
+          timestamp: new Date('2020-03-06T06:55:00.000Z'),
           duration: 15,
         }
       ],
@@ -50,27 +50,27 @@ describe('outages', () => {
       output: [
         {
           type: 'MAJOR',
-          timestamp: new Date('2020-03-05T06:24:00.000Z'),
+          timestamp: new Date('2020-03-06T06:24:00.000Z'),
           duration: 31,
         },
         {
           type: 'PARTIAL',
-          timestamp: new Date('2020-03-05T06:55:00.000Z'),
+          timestamp: new Date('2020-03-06T06:55:00.000Z'),
           duration: 15,
         },
         {
           type: 'MAJOR',
-          timestamp: new Date('2020-03-20T03:45:00.000Z'),
+          timestamp: new Date('2020-03-21T03:45:00.000Z'),
           duration: 90,
         },
         {
           type: 'PARTIAL',
-          timestamp: new Date('2020-03-20T05:15:00.000Z'),
+          timestamp: new Date('2020-03-21T05:15:00.000Z'),
           duration: 30,
         },
         {
           type: 'PARTIAL',
-          timestamp: new Date('2020-03-25T16:15:00.000Z'),
+          timestamp: new Date('2020-03-26T16:15:00.000Z'),
           duration: 10,
         }
       ],
