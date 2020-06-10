@@ -79,7 +79,7 @@ describe('outages', () => {
 
   for (const { input, output } of cases) {
     it('should generate correct output', () => {
-      expect(availability.apply(null, input)).to.deep.equal(output);
+      expect(outages.apply(null, input)).to.deep.equal(output);
     });
   }
 });
