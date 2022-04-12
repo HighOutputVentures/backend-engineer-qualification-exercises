@@ -4,6 +4,13 @@ import { expect } from 'chai';
 import R from 'ramda';
 import AsyncCache from '.';
 
+/**
+ * An optimization problem that involves storing the results of an
+ * asynchronous operation in a non-persistent cache to prevent redundant
+ * executions when called multiple times.
+ * This is applicable to operations that results into the same output
+ * given the same input.
+ */
 describe('AsyncCache', () => {
   before(function () {
     this.spy = sinon.spy(async (first: any, second: any) => {
