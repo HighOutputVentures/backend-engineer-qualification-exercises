@@ -12,7 +12,7 @@ export function availability(startDateTime: Date, endDateTime: Date): number {
 /**
  * Generates the outages between startDateTime inclusive and endDateTime exclusive.
  * An outage is PARTIAL if the status within the period is PARTIALLY_AVAILABLE.
- * Similarly, an outage is MAJOR if the status within the period is MAJOR.
+ * Similarly, an outage is MAJOR if the status within the period is UNAVAILABLE.
  * @param startDateTime 
  * @param endDateTime 
  */
